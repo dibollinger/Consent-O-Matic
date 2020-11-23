@@ -37,13 +37,15 @@
                            "waitTime": 200,
                            "negated": false
                         },
+                        {
                         "type": "click",
-                        "parent": {
-                            "selector": "#consent"
-                        },
-                        "target": {
-                            "selector": "span",
-                            "textFilter": "Cookie Preferences"
+                            "parent": {
+                                "selector": "#consent"
+                            },
+                            "target": {
+                                "selector": "span",
+                                "textFilter": "Cookie Preferences"
+                            }
                         }
                     ]
                 }
