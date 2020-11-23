@@ -22,14 +22,30 @@
             {
                 "name": "OPEN_OPTIONS",
                 "action": {
-                    "type": "click",
-                    "parent": {
-                        "selector": "#consent"
-                    },
-                    "target": {
-                        "selector": "span",
-                        "textFilter": "Cookie Preferences."
-                    }
+                    "type": "list",
+                    "actions": [
+                        {
+                           "type": "waitcss",
+                            "parent": {
+                                "selector": "#consent"
+                            },
+                            "target": {
+                                "selector": "span",
+                                "textFilter": "Cookie Preferences"
+                            },
+                           "retries": 10,
+                           "waitTime": 200,
+                           "negated": false
+                        },
+                        "type": "click",
+                        "parent": {
+                            "selector": "#consent"
+                        },
+                        "target": {
+                            "selector": "span",
+                            "textFilter": "Cookie Preferences"
+                        }
+                    ]
                 }
             },
             {
