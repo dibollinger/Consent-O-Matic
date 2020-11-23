@@ -1,0 +1,169 @@
+{
+    "Termly": {
+        "detectors": [
+            {
+                "presentMatcher": {
+                    "type": "css",
+                    "target": {
+                        "selector": "#consent",
+                        "textFilter": "termly-consent-banner"
+                    }
+                },
+                "showingMatcher": {
+                    "type": "css",
+                    "target": {
+                        "selector": "#consent",
+                        "textFilter": "termly-consent-banner",
+                        "displayFilter": true
+                    }
+                }
+            }
+        ],
+        "methods":
+        [
+            {
+                "name": "OPEN_OPTIONS",
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "span",
+                        "textFilter": "Cookie Preferences."
+                    }
+                }
+            },
+            {
+                "name": "DO_CONSENT",
+                "action": {
+                    "type": "consent",
+                    "consents": [
+                        {
+                            "type": "A",
+                            "matcher": {
+                                "type": "checkbox",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Performance and functionality"
+                                },
+                                "target": {
+                                    "selector": "input"
+                                }
+                            },
+                            "toggleAction": {
+                                "type": "click",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Performance and functionality"
+                                },
+                                "target": {
+                                    "selector": ".termly-switch-switch-700126"
+                                }
+                            }
+                        },
+                        {
+                            "type": "B",
+                            "matcher": {
+                                "type": "checkbox",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Analytics and customization"
+                                },
+                                "target": {
+                                    "selector": "input"
+                                }
+                            },
+                            "toggleAction": {
+                                "type": "click",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Analytics and customization"
+                                },
+                                "target": {
+                                    "selector": ".termly-switch-switch-700126"
+                                }
+                            }
+                        },
+                        {
+                            "type": "F",
+                            "matcher": {
+                                "type": "checkbox",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Advertising"
+                                },
+                                "target": {
+                                    "selector": "input"
+                                }
+                            },
+                            "toggleAction": {
+                                "type": "click",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Advertising"
+                                },
+                                "target": {
+                                    "selector": ".termly-switch-switch-700126"
+                                }
+                            }
+                        },
+                        {
+                            "type": "A",
+                            "matcher": {
+                                "type": "checkbox",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Social networking"
+                                },
+                                "target": {
+                                    "selector": "input"
+                                }
+                            },
+                            "toggleAction": {
+                                "type": "click",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Social networking"
+                                },
+                                "target": {
+                                    "selector": ".termly-switch-switch-700126"
+                                }
+                            }
+                        },
+                        {
+                            "type": "X",
+                            "matcher": {
+                                "type": "checkbox",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Unclassified"
+                                },
+                                "target": {
+                                    "selector": "input"
+                                }
+                            },
+                            "toggleAction": {
+                                "type": "click",
+                                "parent": {
+                                    "selector": ".termly-accordion-title-702e61",
+                                    "textFilter": "Unclassified"
+                                },
+                                "target": {
+                                    "selector": ".termly-switch-switch-700126"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "SAVE_CONSENT",
+                "action": {
+                   "type": "click",
+                   "target": {
+                      "selector": "button",
+                      "textFilter":"Save and Finish"
+                   }
+                }
+            }
+        ]
+    }
+}
