@@ -23,6 +23,9 @@
                 "name": "OPEN_OPTIONS",
                 "action": {
                     "type": "click",
+                    "parent": {
+                        "selector": "#consent"
+                    },
                     "target": {
                         "selector": "span",
                         "textFilter": "Cookie Preferences."
