@@ -5,15 +5,13 @@
                 "presentMatcher": {
                     "type": "css",
                     "target": {
-                        "selector": "#consent",
-                        "textFilter": "termly-consent-banner"
+                        "selector": "#consent"
                     }
                 },
                 "showingMatcher": {
                     "type": "css",
                     "target": {
                         "selector": "#consent",
-                        "textFilter": "termly-consent-banner",
                         "displayFilter": true
                     }
                 }
