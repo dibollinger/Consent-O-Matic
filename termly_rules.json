@@ -30,8 +30,7 @@
                                 "selector": "#consent"
                             },
                             "target": {
-                                "selector": "span",
-                                "textFilter": "Cookie Preferences"
+                                "selector": "span[style=\"text-decoration: underline; cursor: pointer;\"]"
                             },
                            "retries": 10,
                            "waitTime": 200,
@@ -43,8 +42,7 @@
                                 "selector": "#consent"
                             },
                             "target": {
-                                "selector": "span",
-                                "textFilter": "Cookie Preferences"
+                                "selector": "span[style=\"text-decoration: underline; cursor: pointer;\"]"
                             }
                         }
                     ]
