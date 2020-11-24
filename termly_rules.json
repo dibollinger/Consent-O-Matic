@@ -174,11 +174,34 @@
             {
                 "name": "SAVE_CONSENT",
                 "action": {
-                   "type": "click",
-                   "target": {
-                      "selector": "button",
-                      "textFilter":"Save and Finish"
-                   }
+                    "type": "ifcss",
+                    "parent": {
+                        "selector": ".termly-consent-banner-footer-e1f124"
+                    },
+                    "target": {
+                        "selector": "button",
+                        "textFilter":"Save and Finish"
+                    },
+                    "trueAction": {
+                        "type": "click",
+                        "parent": {
+                            "selector": ".termly-consent-banner-footer-e1f124"
+                        },
+                        "target": {
+                            "selector": "button",
+                            "textFilter":"Save and Finish"
+                        }
+                    },
+                    "falseAction": {
+                        "type": "click",
+                        "parent": {
+                            "selector": ".termly-consent-banner-footer-e1f124"
+                        },
+                        "target": {
+                            "selector": "button",
+                            "textFilter":"Allow All"
+                        }
+                    }
                 }
             }
         ]
